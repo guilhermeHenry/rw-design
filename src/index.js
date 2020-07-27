@@ -42,7 +42,7 @@ rwd.media = function(query, callback = null) {
 }
 
 rwd.set = function () {
-	this.bps = this.queries.map(this.map);
+	this.resolutions = this.queries.map(this.map);
 	this.check();
 }
 
@@ -64,7 +64,7 @@ rwd.check = function () {
 }
 
 rwd.setView = function() {
-	this.bps.forEach(([min, max]) => {
+	this.resolutions.forEach(([min, max]) => {
 		if (this.screen > min && this.screen <= max){
 	 		this.breakpoint = {min: min, max: max};
 			this.callback[max](max);

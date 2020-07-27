@@ -1,7 +1,7 @@
 {
   "name": "rw-design",
   "version": "1.0.0",
-  "description": "",
+  "description": "Adaptar a tela aos dispositivos, por meio do javascript",
   "main": "src/index.js",
   "dependencies": {
     "lodash": "^4.17.19"

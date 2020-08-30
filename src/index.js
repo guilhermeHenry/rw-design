@@ -53,7 +53,7 @@ rwd.map = function (point) {
 }
 
 rwd.check = function () {
-	this.screen = document.body.offsetWidth;
+	this.screen = window.innerWidth;
 
 	if (!this.breakpoint){
 		this.setView();
